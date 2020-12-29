@@ -1,1 +1,2 @@
 This is a question about the execution of arbitrary kernel code in the GPU-Z driver. The physical memory mapping interface is disclosed in GPU-Z-v2.sys, and no checks are performed on the incoming parameters, which results in the ability to map any physical memory to user space. However, since the use of this interface requires SeLoadDriverPrivilege permission, it cannot be used to elevate permissions, but it can still be used to bypass the mandatory driver signature protection.
+The program running environment is in windows 7 x64
